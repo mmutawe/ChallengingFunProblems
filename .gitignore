@@ -7,7 +7,7 @@
 /dataSources/
 /dataSources.local.xml
 
-./.idea
-./out
+.idea/
+./out/**
 **.DS_Store
 ChallengingFunProblems.iml
