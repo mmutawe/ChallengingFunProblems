@@ -8,6 +8,6 @@
 /dataSources.local.xml
 
 .idea/
-./out/**
+./out
 **.DS_Store
 ChallengingFunProblems.iml

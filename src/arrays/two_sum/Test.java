@@ -1,15 +1,14 @@
 package arrays.two_sum;
 
-import static testsamples.arrays.ArraysTestSampleSML.*;
+import static testsamples.arrays.ArraysTestSampleSML.ARR_TEST_SAMPLE_1;
+import static testsamples.arrays.ArraysTestSampleSML.ARR_TEST_SAMPLE_2;
+import static testsamples.arrays.ArraysTestSampleSML.ARR_TEST_SAMPLE_EMPTY;
+import static testsamples.arrays.ArraysTestSampleSML.ARR_TEST_SAMPLE_ONE_ELEMENT;
 
 public class Test {
 
     public static void main(String[] args) {
         runAllTests();
-
-//        testIndicesForSummation_V1();
-//        testIndicesForSummation_V2();
-//        testIndicesForSummation_V3();
     }
 
     public static void testIndicesForSummation_V1() {
