@@ -16,7 +16,7 @@ import java.util.Map;
 // TODO - Required:
 //      return the indices of the two numbers that add up to given target
 //      Ex: {1,2,3,4,5,6} , sum = 5 --> {2,3}, {1,4}
-public class CustomArrayOpsImpl implements CustomArrayOps {
+public class TwoSumImpl implements TwoSum {
 
     // *** Brute Force Solution ***
     // two pointers technique
