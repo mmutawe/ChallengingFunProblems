@@ -1,5 +1,7 @@
 package arrays.two_sum;
 
-public class CustomArrayOps {
+import java.util.List;
 
+public interface CustomArrayOps<T> {
+    List<T>  getIndicesForSummationV1(int sum, int[] arr);
 }
