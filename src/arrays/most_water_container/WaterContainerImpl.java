@@ -34,6 +34,7 @@ public class WaterContainerImpl implements WaterContainer {
 
     // optimal solution
     // two Shifting Pointers
+    // Space: O(1), Time: O(n)
     public int getLargestContainerAreaV2(int[] arr) {
 
         if (arr.length < 2) {
