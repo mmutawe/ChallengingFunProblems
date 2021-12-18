@@ -1,12 +1,20 @@
 package arrays.most_water_container;
 
-public class WaterContainerImpl implements WaterContainer{
-
+// Given:
+//      - array of positive integers
+//      - each integer represents the height of vertical line on a chart
+// Constrains:
+//      - do the left and right sides of the graph count as walls
+// TODO - Required:
+//      - Find two lines which together with the x-axis forms a container
+//      that would hold the greatest amount of water
+//      - return the area of water it would hold
+public class WaterContainerImpl implements WaterContainer {
 
     // *** Brute Force Solution ***
     // two pointers technique
     // Space: O(1), Time: O(n^2)
-    public double getLargestContainerAreaV1(int[] arr) {
+    public int getLargestContainerAreaV1(int[] arr) {
 
         int areaMax = 0;
 
@@ -15,7 +23,7 @@ public class WaterContainerImpl implements WaterContainer{
             int area = 0;
             for (int j = i + 1; j < arr.length; j++) {
                 height = (arr[j] > arr[i]) ? arr[i] : arr[j];
-                area = height * (j-i);
+                area = height * (j - i);
                 if (area > areaMax) {
                     areaMax = area;
                 }
@@ -24,8 +32,33 @@ public class WaterContainerImpl implements WaterContainer{
         return areaMax;
     }
 
-    public double getLargestContainerAreaV2(int[] arr) {
-        int[] areaMax = new int[arr.length - 1];
-        return 0;
+    // optimal solution
+    // two Shifting Pointers
+    public int getLargestContainerAreaV2(int[] arr) {
+
+        if (arr.length < 2) {
+            return 0;
+        }
+
+        int indexStart = 0;
+        int indexEnd = arr.length - 1;
+        int areaMax = 0;
+
+        while (indexStart != indexEnd) {
+            int width = indexEnd - indexStart;
+            int height = arr[indexEnd] > arr[indexStart] ? arr[indexStart] : arr[indexEnd];
+            int area = width * height;
+            if (area > areaMax){
+                areaMax = area;
+            }
+
+            if (arr[indexStart] > arr[indexEnd]){
+                indexEnd--;
+            } else {
+                indexStart++;
+            }
+        }
+
+        return areaMax;
     }
 }
