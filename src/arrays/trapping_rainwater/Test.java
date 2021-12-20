@@ -32,6 +32,10 @@ public class Test {
 
         System.out.printf(format, Arrays.toString(ARR_TEST_SAMPLE_EMPTY),
                 "-->" + rainWaterContainer.findTrappingWaterAreaV1(ARR_TEST_SAMPLE_EMPTY) + "\n");
+
+        System.out.printf(format, Arrays.toString(ARR_TEST_SAMPLE_5),
+                "-->" + rainWaterContainer.findTrappingWaterAreaV1(ARR_TEST_SAMPLE_5) + "\n");
+
     }
 
     public static void runAllTests() {

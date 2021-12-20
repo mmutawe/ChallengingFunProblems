@@ -6,6 +6,8 @@ public class ArraysTestSampleSML {
     public static final int[] ARR_TEST_SAMPLE_3 ={0,1,0,2,1,0,2};
     public static final int[] ARR_TEST_SAMPLE_4 ={4,1,3,0,1,1,2};
 
+    public static final int[] ARR_TEST_SAMPLE_5 ={0,1,4,0,2,1,1,0,1,3,1,4,3,1,0,1,2,3,4};
+
     public static final int[] ARR_TEST_SAMPLE_ONE_ELEMENT = {5};
     public static final int[] ARR_TEST_SAMPLE_EMPTY = new int[0];
 }
