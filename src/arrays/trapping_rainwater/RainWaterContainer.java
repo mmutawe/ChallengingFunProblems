@@ -15,4 +15,5 @@ package arrays.trapping_rainwater;
 //      _____  XX()XXXX()XX____
 public interface RainWaterContainer {
     int findTrappingWaterAreaV1(int[] arr);
+    int findTrappingWaterAreaV2(int[] arr);
 }

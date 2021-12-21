@@ -49,4 +49,9 @@ public class RainWaterContainerImpl implements RainWaterContainer {
 
         return totalTrappingWater;
     }
+
+    // Brute Force
+    public int findTrappingWaterAreaV2(int[] arr) {
+        return 0;
+    }
 }
