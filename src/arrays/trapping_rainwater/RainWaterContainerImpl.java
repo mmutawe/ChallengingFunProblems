@@ -52,6 +52,7 @@ public class RainWaterContainerImpl implements RainWaterContainer {
     }
 
     // Brute Force
+    // Space: O(1), Time: O(n ^ 2)
     public int findTrappingWaterAreaV2(int[] arr) {
 
         if(arr.length < 3) {
