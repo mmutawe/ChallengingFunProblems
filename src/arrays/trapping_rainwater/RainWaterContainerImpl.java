@@ -8,6 +8,7 @@ public class RainWaterContainerImpl implements RainWaterContainer {
     // the one that start it then it will be ignored
     //
     // Space: O(n), Time: O(n * k) - where k is the tallest wall in the array
+    //                  ~ O(n)
     @Override
     public int findTrappingWaterAreaV1(int[] arr) {
 
@@ -52,6 +53,30 @@ public class RainWaterContainerImpl implements RainWaterContainer {
 
     // Brute Force
     public int findTrappingWaterAreaV2(int[] arr) {
-        return 0;
+
+        if(arr.length < 3) {
+            return 0;
+        }
+
+        int totalTrappingWater=0;
+        for (int i=1; i<arr.length-1;i++){
+            // find the tallest wall from the left
+            int maxLeft=0;
+            for (int j=0; j<i; j++){
+                if (arr[j] > maxLeft){
+                    maxLeft = arr[j];
+                }
+            }
+            // find the tallest wall from the right
+            int maxRigth=0;
+            for (int j=i+1; j<arr.length; j++){
+                if (arr[j] > maxRigth){
+                    maxRigth = arr[j];
+                }
+            }
+            int waterLevel = Math.min(maxLeft,maxRigth);
+            totalTrappingWater += Math.max((waterLevel - arr[i]), 0);
+        }
+        return totalTrappingWater;
     }
 }
