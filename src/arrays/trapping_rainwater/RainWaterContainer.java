@@ -16,4 +16,5 @@ package arrays.trapping_rainwater;
 public interface RainWaterContainer {
     int findTrappingWaterAreaV1(int[] arr);
     int findTrappingWaterAreaV2(int[] arr);
+    int findTrappingWaterAreaV3(int[] arr);
 }

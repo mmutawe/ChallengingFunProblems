@@ -7,8 +7,8 @@ public class RainWaterContainerImpl implements RainWaterContainer {
     // wall on the other side. for blocks of water that never reached the wall height as
     // the one that start it then it will be ignored
     //
+    // Brute Force
     // Space: O(n), Time: O(n * k) - where k is the tallest wall in the array
-    //                  ~ O(n)
     @Override
     public int findTrappingWaterAreaV1(int[] arr) {
 
@@ -16,16 +16,16 @@ public class RainWaterContainerImpl implements RainWaterContainer {
             return 0;
         }
 
+        // find tallest wall
         int max = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max) {
                 max = arr[i];
             }
         }
-
         int[] waterBlockPerLevel = new int[max];
-        int totalTrappingWater = 0;
 
+        int totalTrappingWater = 0;
         int tallestWallHeight = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] > arr[i - 1]) {
@@ -55,28 +55,65 @@ public class RainWaterContainerImpl implements RainWaterContainer {
     // Space: O(1), Time: O(n ^ 2)
     public int findTrappingWaterAreaV2(int[] arr) {
 
-        if(arr.length < 3) {
+        if (arr.length < 3) {
             return 0;
         }
 
-        int totalTrappingWater=0;
-        for (int i=1; i<arr.length-1;i++){
+        int totalTrappingWater = 0;
+        for (int i = 1; i < arr.length - 1; i++) {
             // find the tallest wall from the left
-            int maxLeft=0;
-            for (int j=0; j<i; j++){
-                if (arr[j] > maxLeft){
+            int maxLeft = 0;
+            for (int j = 0; j < i; j++) {
+                if (arr[j] > maxLeft) {
                     maxLeft = arr[j];
                 }
             }
             // find the tallest wall from the right
-            int maxRigth=0;
-            for (int j=i+1; j<arr.length; j++){
-                if (arr[j] > maxRigth){
+            int maxRigth = 0;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] > maxRigth) {
                     maxRigth = arr[j];
                 }
             }
-            int waterLevel = Math.min(maxLeft,maxRigth);
+            int waterLevel = Math.min(maxLeft, maxRigth);
             totalTrappingWater += Math.max((waterLevel - arr[i]), 0);
+        }
+        return totalTrappingWater;
+    }
+
+    // optimal solution
+    // two Shifting Pointers
+    // Space: O(1), Time: O(n)
+    public int findTrappingWaterAreaV3(int[] arr) {
+
+        if (arr.length < 3) {
+            return 0;
+        }
+
+        int indexStart = 0;
+        int indexEnd = arr.length - 1;
+        int maxLeft = 0;
+        int maxRight = 0;
+        int totalTrappingWater = 0;
+
+        while (indexStart != indexEnd) {
+            if (arr[indexStart] < arr[indexEnd]) {
+                if (arr[indexStart] < maxLeft) {
+                    totalTrappingWater += (maxLeft - arr[indexStart]);
+                } else {
+                    maxLeft = arr[indexStart];
+                }
+                indexStart++;
+
+            } else {
+                if (arr[indexEnd] < maxRight) {
+                    totalTrappingWater += (maxRight - arr[indexEnd]);
+                } else {
+                    maxRight = arr[indexEnd];
+                }
+                indexEnd--;
+
+            }
         }
         return totalTrappingWater;
     }

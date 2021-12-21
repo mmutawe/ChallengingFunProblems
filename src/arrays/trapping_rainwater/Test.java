@@ -67,10 +67,41 @@ public class Test {
 
     }
 
+    public static void testTrappingWaterAreaV3() {
+        RainWaterContainer rainWaterContainer = new RainWaterContainerImpl();
+
+        String format = "%-24s%s";
+
+        System.out.println("* Trapping Water Area:");
+        System.out.printf(format, Arrays.toString(ARR_TEST_SAMPLE_1),
+                "-->" + rainWaterContainer.findTrappingWaterAreaV3(ARR_TEST_SAMPLE_1) + "\n");
+
+        System.out.printf(format, Arrays.toString(ARR_TEST_SAMPLE_2),
+                "-->" + rainWaterContainer.findTrappingWaterAreaV3(ARR_TEST_SAMPLE_2) + "\n");
+
+        System.out.printf(format, Arrays.toString(ARR_TEST_SAMPLE_3),
+                "-->" + rainWaterContainer.findTrappingWaterAreaV3(ARR_TEST_SAMPLE_3) + "\n");
+
+        System.out.printf(format, Arrays.toString(ARR_TEST_SAMPLE_4),
+                "-->" + rainWaterContainer.findTrappingWaterAreaV3(ARR_TEST_SAMPLE_4) + "\n");
+
+        System.out.printf(format, Arrays.toString(ARR_TEST_SAMPLE_ONE_ELEMENT),
+                "-->" + rainWaterContainer.findTrappingWaterAreaV3(ARR_TEST_SAMPLE_ONE_ELEMENT) + "\n");
+
+        System.out.printf(format, Arrays.toString(ARR_TEST_SAMPLE_EMPTY),
+                "-->" + rainWaterContainer.findTrappingWaterAreaV3(ARR_TEST_SAMPLE_EMPTY) + "\n");
+
+        System.out.printf(format, Arrays.toString(ARR_TEST_SAMPLE_5),
+                "-->" + rainWaterContainer.findTrappingWaterAreaV3(ARR_TEST_SAMPLE_5) + "\n");
+
+    }
+
     public static void runAllTests() {
         testTrappingWaterAreaV1();
         System.out.println("-------------------------------");
         testTrappingWaterAreaV2();
+        System.out.println("-------------------------------");
+        testTrappingWaterAreaV3();
 
     }
 }
