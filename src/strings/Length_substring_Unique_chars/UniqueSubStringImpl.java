@@ -20,8 +20,6 @@ public class UniqueSubStringImpl implements UniqueSubString {
             if (subStr.length() > maxSubstrLength) {
                 maxSubstrLength = subStr.length();
             }
-
-            System.out.println("*** " + subStr);
         }
 
         return maxSubstrLength;

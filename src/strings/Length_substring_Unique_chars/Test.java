@@ -19,17 +19,17 @@ public class Test {
         System.out.println("* Longest substring length:");
         String format = "%-10s%s";
 
-//        System.out.printf(format, STR_TEST_SAMPLE_3,
-//                " --> " + uniqueSubString.lengthOfLongestSubstringV1(STR_TEST_SAMPLE_3) + "\n");
-//
-//        System.out.printf(format, STR_TEST_SAMPLE_4,
-//                " --> " + uniqueSubString.lengthOfLongestSubstringV1(STR_TEST_SAMPLE_4) + "\n");
+        System.out.printf(format, STR_TEST_SAMPLE_3,
+                " --> " + uniqueSubString.lengthOfLongestSubstringV1(STR_TEST_SAMPLE_3) + "\n");
+
+        System.out.printf(format, STR_TEST_SAMPLE_4,
+                " --> " + uniqueSubString.lengthOfLongestSubstringV1(STR_TEST_SAMPLE_4) + "\n");
 
         System.out.printf(format, STR_TEST_SAMPLE_5,
                 " --> " + uniqueSubString.lengthOfLongestSubstringV1(STR_TEST_SAMPLE_5) + "\n");
 
-//        System.out.printf(format, STR_TEST_SAMPLE_EMPTY,
-//                " --> " + uniqueSubString.lengthOfLongestSubstringV1(STR_TEST_SAMPLE_EMPTY) + "\n");
+        System.out.printf(format, STR_TEST_SAMPLE_EMPTY,
+                " --> " + uniqueSubString.lengthOfLongestSubstringV1(STR_TEST_SAMPLE_EMPTY) + "\n");
 
     }
     public static void runAllTests() {
