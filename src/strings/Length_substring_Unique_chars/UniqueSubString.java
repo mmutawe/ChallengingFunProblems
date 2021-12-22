@@ -10,5 +10,5 @@ package strings.Length_substring_Unique_chars;
 //      find the length of the longest substring without repeating characters.
 //      Ex: "abbcac" --> 3 (which is "abc")
 public interface UniqueSubString {
-    int lengthOfLongestSubstring(String text);
+    int lengthOfLongestSubstringV1(String str);
 }
