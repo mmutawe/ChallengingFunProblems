@@ -32,8 +32,31 @@ public class Test {
                 " --> " + uniqueSubString.lengthOfLongestSubstringV1(STR_TEST_SAMPLE_EMPTY) + "\n");
 
     }
+
+    public static void testLengthOfLongestSubstringV2(){
+
+        UniqueSubString uniqueSubString = new UniqueSubStringImpl();
+
+        System.out.println("* Longest substring length:");
+        String format = "%-10s%s";
+
+        System.out.printf(format, STR_TEST_SAMPLE_3,
+                " --> " + uniqueSubString.lengthOfLongestSubstringV2(STR_TEST_SAMPLE_3) + "\n");
+
+        System.out.printf(format, STR_TEST_SAMPLE_4,
+                " --> " + uniqueSubString.lengthOfLongestSubstringV2(STR_TEST_SAMPLE_4) + "\n");
+
+        System.out.printf(format, STR_TEST_SAMPLE_5,
+                " --> " + uniqueSubString.lengthOfLongestSubstringV2(STR_TEST_SAMPLE_5) + "\n");
+
+        System.out.printf(format, STR_TEST_SAMPLE_EMPTY,
+                " --> " + uniqueSubString.lengthOfLongestSubstringV2(STR_TEST_SAMPLE_EMPTY) + "\n");
+
+    }
     public static void runAllTests() {
         testLengthOfLongestSubstringV1();
+        System.out.println("-------------------------------");
+        testLengthOfLongestSubstringV2();
         System.out.println("-------------------------------");
     }
 }
