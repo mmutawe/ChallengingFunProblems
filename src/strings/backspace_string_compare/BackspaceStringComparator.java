@@ -13,4 +13,5 @@ package strings.backspace_string_compare;
 //      Ex: "ab#c" & "az#c" --> "ac" ?= "ac"
 public interface BackspaceStringComparator {
     boolean backspaceCompareV1(String text1, String text2);
+    boolean backspaceCompareV2(String text1, String text2);
 }

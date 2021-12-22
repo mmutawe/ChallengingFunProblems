@@ -8,7 +8,7 @@ public class BackspaceStringComparatorImpl implements BackspaceStringComparator 
     public boolean backspaceCompareV1(String text1, String text2) {
 
         int hashCounter = 0;
-        String typedText1="";
+        String typedText1 = "";
         for (int i = text1.length() - 1; i >= 0; i--) {
             if (text1.charAt(i) == '#') {
                 hashCounter++;
@@ -23,8 +23,8 @@ public class BackspaceStringComparatorImpl implements BackspaceStringComparator 
             }
         }
 
-        hashCounter=0;
-        String typedText2="";
+        hashCounter = 0;
+        String typedText2 = "";
         for (int i = text2.length() - 1; i >= 0; i--) {
             if (text2.charAt(i) == '#') {
                 hashCounter++;
@@ -39,19 +39,62 @@ public class BackspaceStringComparatorImpl implements BackspaceStringComparator 
             }
         }
 
-        if (typedText1.equals(typedText2)){
+        if (typedText1.equals(typedText2)) {
             return true;
         }
         return false;
     }
 
+    // *** Optimal Solution ***
+    // Space: O(1) , Time: O(n)
     public boolean backspaceCompareV2(String text1, String text2) {
 
-        int maxIndex = Math.max(text1.length(), text2.length()) - 1;
-        for (int i = maxIndex; i >= 0; i--) {
+        int indexT1 = text1.length() - 1;
+        int indexT2 = text2.length() - 1;
+        int hashCounterText1 = 0;
+        int hashCounterText2 = 0;
+        boolean readyToCompare = false;
 
-//            char charLocatorT1;
+        while (indexT1 >= 0 || indexT2 >= 0) {
+
+
+            if (indexT1 < 0) {
+                if (hashCounterText2 == 0 & text2.charAt(indexT2) !='#'){
+                    return false;
+                }
+            }
+            else if (text1.charAt(indexT1) == '#') {
+                hashCounterText1++;
+                indexT1--;
+
+            } else if (hashCounterText1 != 0) {
+                hashCounterText1--;
+                indexT1--;
+
+            } else if (!readyToCompare) {
+                readyToCompare = true;
+            }
+
+            if (indexT2 < 0) {
+                if (readyToCompare) {
+                    return false;
+                }
+            } else if (text2.charAt(indexT2) == '#') {
+                hashCounterText2++;
+                indexT2--;
+            } else if (hashCounterText2 != 0) {
+                hashCounterText2--;
+                indexT2--;
+            } else if (readyToCompare) {
+                if (text1.charAt(indexT1) != text2.charAt(indexT2)) {
+                    return false;
+                }
+                readyToCompare = false;
+                indexT1--;
+                indexT2--;
+            }
         }
+
         return true;
     }
 }
