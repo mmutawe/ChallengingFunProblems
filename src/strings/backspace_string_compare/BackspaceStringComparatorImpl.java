@@ -51,45 +51,44 @@ public class BackspaceStringComparatorImpl implements BackspaceStringComparator 
 
         int indexT1 = text1.length() - 1;
         int indexT2 = text2.length() - 1;
-        int hashCounterText1 = 0;
-        int hashCounterText2 = 0;
-        boolean readyToCompare = false;
+        int hashCounterT1 = 0;
+        int hashCounterT2 = 0;
+        boolean isReadyToCompare = false;
 
         while (indexT1 >= 0 || indexT2 >= 0) {
-
-
+            // Tracking characters at Text 1
             if (indexT1 < 0) {
-                if (hashCounterText2 == 0 & text2.charAt(indexT2) !='#'){
+                if (hashCounterT2 == 0 & text2.charAt(indexT2) != '#') {
                     return false;
                 }
-            }
-            else if (text1.charAt(indexT1) == '#') {
-                hashCounterText1++;
+            } else if (text1.charAt(indexT1) == '#') {
+                hashCounterT1++;
                 indexT1--;
 
-            } else if (hashCounterText1 != 0) {
-                hashCounterText1--;
+            } else if (hashCounterT1 != 0) {
+                hashCounterT1--;
                 indexT1--;
 
-            } else if (!readyToCompare) {
-                readyToCompare = true;
+            } else if (!isReadyToCompare) {
+                isReadyToCompare = true;
             }
 
+            // Tracking characters at Text 2
             if (indexT2 < 0) {
-                if (readyToCompare) {
+                if (isReadyToCompare) {
                     return false;
                 }
             } else if (text2.charAt(indexT2) == '#') {
-                hashCounterText2++;
+                hashCounterT2++;
                 indexT2--;
-            } else if (hashCounterText2 != 0) {
-                hashCounterText2--;
+            } else if (hashCounterT2 != 0) {
+                hashCounterT2--;
                 indexT2--;
-            } else if (readyToCompare) {
+            } else if (isReadyToCompare) {
                 if (text1.charAt(indexT1) != text2.charAt(indexT2)) {
                     return false;
                 }
-                readyToCompare = false;
+                isReadyToCompare = false;
                 indexT1--;
                 indexT2--;
             }
