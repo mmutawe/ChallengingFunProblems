@@ -45,15 +45,15 @@ public class UniqueSubStringImpl implements UniqueSubString {
             int charValue = (int) str.charAt(tailPointer);
 
             // shift it by -97.
-            charValue -=ASCII_SML_A_VALUE;
+            charValue -= ASCII_SML_A_VALUE;
 
             // check if an index has been assign to this char.
-            if (lettersIndicesHashTable[charValue] == -1 || lettersIndicesHashTable[charValue] < headPointer){
+            if (lettersIndicesHashTable[charValue] == -1 || lettersIndicesHashTable[charValue] < headPointer) {
                 lettersIndicesHashTable[charValue] = tailPointer;
 
             } else {
 
-                if ((tailPointer - headPointer) > maxSubstrLength){
+                if ((tailPointer - headPointer) > maxSubstrLength) {
                     maxSubstrLength = tailPointer - headPointer;
                 }
 
@@ -66,7 +66,7 @@ public class UniqueSubStringImpl implements UniqueSubString {
         }
 
         // check if rest of string finished with a unique characters (last possible case)
-        if ((tailPointer - headPointer) > maxSubstrLength){
+        if ((tailPointer - headPointer) > maxSubstrLength) {
             maxSubstrLength = tailPointer - headPointer;
         }
 
@@ -80,7 +80,7 @@ public class UniqueSubStringImpl implements UniqueSubString {
         final int NUM_OF_ENGLISH_LETTERS = 26;
 
         int[] hashTable = new int[NUM_OF_ENGLISH_LETTERS];
-        for (int i=0; i< hashTable.length; i++){
+        for (int i = 0; i < hashTable.length; i++) {
             hashTable[i] = -1;
         }
         return hashTable;
