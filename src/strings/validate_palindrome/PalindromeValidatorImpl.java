@@ -30,20 +30,23 @@ public class PalindromeValidatorImpl implements PalindromeValidator {
         char charTail = ' ';
         while (head < tail) {
 
-            while (head < tail) {
+            // check head character
+            do {
                 charHead = alphanumericValidator(s.charAt(head));
                 if (charHead != '!') {
                     break;
                 }
                 head++;
-            }
-            while (tail > head) {
+            } while (head < tail);
+
+            // check tail character
+            do {
                 charTail = alphanumericValidator(s.charAt(tail));
                 if (charTail != '!') {
                     break;
                 }
                 tail--;
-            }
+            } while (tail > head);
 
             if (head < tail && charHead != charTail) {
                 return false;
