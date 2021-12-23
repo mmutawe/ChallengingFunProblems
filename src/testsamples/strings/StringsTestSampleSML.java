@@ -11,9 +11,9 @@ public class StringsTestSampleSML {
     public static final String STR_TEST_SAMPLE_4 = "dddddd";
     public static final String STR_TEST_SAMPLE_5 = "abcbda";
 
-    public static final String STR_TEST_SAMPLE_6 = "aa_bb_aa";
-    public static final String STR_TEST_SAMPLE_7 = "Kayak";
-    public static final String STR_TEST_SAMPLE_9 = "A man, a plan, a canal: Panama";
+    public static final String STR_TEST_SAMPLE_6 = "Kayak";
+    public static final String STR_TEST_SAMPLE_7 = "12A/a&b@B$a^a21";
+    public static final String STR_TEST_SAMPLE_8 = "A man, a plan, a canal: Panama";
 
     public static final String STR_TEST_SAMPLE_SingleChar = "a";
     public static final String STR_TEST_SAMPLE_EMPTY = "";

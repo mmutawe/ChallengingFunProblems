@@ -9,5 +9,6 @@ package strings.validate_palindrome;
 //      determine if string is palindrome
 //      Ex: "aba" --> true ( reading string from left to right =  reading string from right to left)
 public interface PalindromeValidator {
-    boolean isPalindrome(String str);
+    boolean isPalindromeV1(String str);
+    boolean isPalindromeV2(String str);
 }
