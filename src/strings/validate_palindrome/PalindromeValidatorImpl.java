@@ -63,6 +63,7 @@ public class PalindromeValidatorImpl implements PalindromeValidator {
             return c;
         }
 
+        // is a number or a small letter
         if ((int) c > 64 && (int) c < 91) {
             return (char) ((int) c + 32);
         }
