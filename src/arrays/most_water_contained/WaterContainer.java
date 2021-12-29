@@ -1,4 +1,4 @@
-package arrays.most_water_container;
+package arrays.most_water_contained;
 
 // Given:
 //      - array of positive integers

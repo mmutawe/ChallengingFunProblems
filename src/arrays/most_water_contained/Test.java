@@ -1,4 +1,4 @@
-package arrays.most_water_container;
+package arrays.most_water_contained;
 
 import java.util.Arrays;
 
