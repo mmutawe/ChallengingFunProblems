@@ -40,6 +40,7 @@ public class AlmostPalindromeValidatorImpl implements AlmostPalindromeValidator 
         return true;
     }
 
+    // "cbbcc" **********
     // Optimal solution
     // Time: O(n), Space: 1
     @Override
@@ -57,7 +58,7 @@ public class AlmostPalindromeValidatorImpl implements AlmostPalindromeValidator 
         boolean mismatchShiftRight = false;
         boolean mismatchShiftLeft = false;
 
-        while (head < tail) {
+        while (head <= tail) {
 
             // store prev head and tail value if there is mismatch
             if (hasMismatch) {
@@ -90,7 +91,7 @@ public class AlmostPalindromeValidatorImpl implements AlmostPalindromeValidator 
                 continue;
             }
 
-            if (hasMismatch && head < tail) {
+            if (hasMismatch && head <= tail) {
                 if (!mismatchShiftRight && charHead != prevCharTail){
                     mismatchShiftRight = true;
                 }

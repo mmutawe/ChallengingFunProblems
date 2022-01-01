@@ -20,6 +20,7 @@ public class StringsTestSampleSML {
     public static final String STR_TEST_SAMPLE_11 = "abcdefdba";
     public static final String STR_TEST_SAMPLE_12 = "xabcba";
     public static final String STR_TEST_SAMPLE_13 = "axbcbaba";
+    public static final String STR_TEST_SAMPLE_14 = "cbbcc";
 
     public static final String STR_TEST_SAMPLE_SingleChar = "a";
     public static final String STR_TEST_SAMPLE_EMPTY = "";
