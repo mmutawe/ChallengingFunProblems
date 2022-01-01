@@ -66,7 +66,7 @@ public class PalindromeValidatorImpl implements PalindromeValidator {
     private char alphanumericValidator(char c) {
         // check if a number or a small letter
         if (((int) c >= (int) '0' && (int) c <= (int) '9') ||
-                ((int) c >= (int) 'a' && (int) c < (int) 'z')) {
+                ((int) c >= (int) 'a' && (int) c <= (int) 'z')) {
             return c;
         }
 
