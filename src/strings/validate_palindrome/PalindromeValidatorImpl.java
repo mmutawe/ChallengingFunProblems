@@ -1,6 +1,11 @@
 package strings.validate_palindrome;
 
+import utils.constants.Constants;
+
+import static utils.constants.Constants.DELTA_CAP_SML_LTR;
+
 public class PalindromeValidatorImpl implements PalindromeValidator {
+
 
     // Brute fprce solution
     // Time: O(n), Space: n
@@ -26,14 +31,14 @@ public class PalindromeValidatorImpl implements PalindromeValidator {
         int head = 0;
         int tail = s.length() - 1;
 
-        char charHead = ' ';
-        char charTail = ' ';
+        char charHead = 0;
+        char charTail = 0;
         while (head < tail) {
 
             // check head character
             do {
                 charHead = alphanumericValidator(s.charAt(head));
-                if (charHead != '!') {
+                if (charHead != 0) {
                     break;
                 }
                 head++;
@@ -42,7 +47,7 @@ public class PalindromeValidatorImpl implements PalindromeValidator {
             // check tail character
             do {
                 charTail = alphanumericValidator(s.charAt(tail));
-                if (charTail != '!') {
+                if (charTail != 0) {
                     break;
                 }
                 tail--;
@@ -59,18 +64,17 @@ public class PalindromeValidatorImpl implements PalindromeValidator {
     }
 
     private char alphanumericValidator(char c) {
-
-        // is a number or a small letter
-        if (((int) c > 47 && (int) c < 58) ||
-                ((int) c > 96 && (int) c < 123)) {
+        // check if a number or a small letter
+        if (((int) c >= (int) '0' && (int) c <= (int) '9') ||
+                ((int) c >= (int) 'a' && (int) c < (int) 'z')) {
             return c;
         }
 
-        // is a number or a small letter
-        if ((int) c > 64 && (int) c < 91) {
-            return (char) ((int) c + 32);
+        // check if a capital letter then convert to small
+        if ((int) c >= (int) 'A' && (int) c <= (int) 'Z') {
+            return (char) ((int) c + DELTA_CAP_SML_LTR);
         }
 
-        return '!';
+        return 0;
     }
 }
