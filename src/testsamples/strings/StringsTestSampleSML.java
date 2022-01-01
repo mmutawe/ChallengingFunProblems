@@ -24,7 +24,4 @@ public class StringsTestSampleSML {
 
     public static final String STR_TEST_SAMPLE_SingleChar = "a";
     public static final String STR_TEST_SAMPLE_EMPTY = "";
-
-
-
 }

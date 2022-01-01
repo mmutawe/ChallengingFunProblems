@@ -40,7 +40,6 @@ public class AlmostPalindromeValidatorImpl implements AlmostPalindromeValidator 
         return true;
     }
 
-    // "cbbcc" **********
     // Optimal solution
     // Time: O(n), Space: 1
     @Override
@@ -92,13 +91,13 @@ public class AlmostPalindromeValidatorImpl implements AlmostPalindromeValidator 
             }
 
             if (hasMismatch && head <= tail) {
-                if (!mismatchShiftRight && charHead != prevCharTail){
+                if (!mismatchShiftRight && charHead != prevCharTail) {
                     mismatchShiftRight = true;
                 }
-                if (!mismatchShiftLeft && prevCharHead != charTail){
+                if (!mismatchShiftLeft && prevCharHead != charTail) {
                     mismatchShiftLeft = true;
                 }
-                if (mismatchShiftRight && mismatchShiftLeft){
+                if (mismatchShiftRight && mismatchShiftLeft) {
                     return false;
                 }
             }
