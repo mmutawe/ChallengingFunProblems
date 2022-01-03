@@ -5,7 +5,7 @@ import linked_lists.shared.ListNode;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 
-public class LinkedListReverserRangeImpl implements  LinkedListReverserRange{
+public class LinkedListReverserRangeImpl implements LinkedListReverserRange {
 
 
     // optimal Solution - iterative
@@ -23,13 +23,13 @@ public class LinkedListReverserRangeImpl implements  LinkedListReverserRange{
         ListNode prevSwapNode = new ListNode();
         prevSwapNode.next = head;
 
-        while(nonNull(currNode)){
+        while (nonNull(currNode)) {
 
-            if(counter == start-1){
+            if (counter == start - 1) {
                 prevSwapNode = currNode;
             }
 
-            if(counter >= start && counter<=end) {
+            if (counter >= start && counter <= end) {
                 nextNode = currNode.next;
                 currNode.next = prevNode;
                 prevNode = currNode;
@@ -38,10 +38,10 @@ public class LinkedListReverserRangeImpl implements  LinkedListReverserRange{
                 currNode = currNode.next;
             }
 
-            if(counter==end){
+            if (counter == end) {
                 prevSwapNode.next.next = nextNode;
                 prevSwapNode.next = prevNode;
-                if(start == 1){
+                if (start == 1) {
                     head = prevNode;
                 }
                 break;
@@ -51,5 +51,4 @@ public class LinkedListReverserRangeImpl implements  LinkedListReverserRange{
         }
         return head;
     }
-
 }
