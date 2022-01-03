@@ -1,5 +1,7 @@
 package linked_lists.reverse_linked_list;
 
+import java.util.Objects;
+
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 
@@ -8,7 +10,7 @@ public class LinkedListReverserImpl implements LinkedListReverser{
     // optimal Solution - iterative
     // Space: O(1) , Time: O(n)
     @Override
-    public ListNode reverseV1(ListNode head) {
+    public ListNode reverse(ListNode head) {
         if (isNull(head)) {
             return null;
         }

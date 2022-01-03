@@ -1,6 +1,5 @@
 package linked_lists.reverse_linked_list;
 
-import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static testsamples.linked_list.LinkedListTestSampleSML.LINKLIST_TEST_SAMPLE_1;
 import static testsamples.linked_list.LinkedListTestSampleSML.LINKLIST_TEST_SAMPLE_NO_VALUES;
@@ -17,19 +16,19 @@ public class Test {
         LinkedListReverser linkedListReverser = new LinkedListReverserImpl();
 
         printAllNodes(LINKLIST_TEST_SAMPLE_NULL);
-        printAllNodes(linkedListReverser.reverseV1(LINKLIST_TEST_SAMPLE_NULL));
+        printAllNodes(linkedListReverser.reverse(LINKLIST_TEST_SAMPLE_NULL));
         System.out.println();
 
         printAllNodes(LINKLIST_TEST_SAMPLE_NO_VALUES);
-        printAllNodes(linkedListReverser.reverseV1(LINKLIST_TEST_SAMPLE_NO_VALUES));
+        printAllNodes(linkedListReverser.reverse(LINKLIST_TEST_SAMPLE_NO_VALUES));
         System.out.println();
 
         printAllNodes(LINKLIST_TEST_SAMPLE_ONE);
-        printAllNodes(linkedListReverser.reverseV1(LINKLIST_TEST_SAMPLE_ONE));
+        printAllNodes(linkedListReverser.reverse(LINKLIST_TEST_SAMPLE_ONE));
         System.out.println();
 
         printAllNodes(LINKLIST_TEST_SAMPLE_1);
-        printAllNodes(linkedListReverser.reverseV1(LINKLIST_TEST_SAMPLE_1));
+        printAllNodes(linkedListReverser.reverse(LINKLIST_TEST_SAMPLE_1));
         System.out.println();
 
 
