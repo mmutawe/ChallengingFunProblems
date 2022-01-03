@@ -1,6 +1,6 @@
 package linked_lists.reverse_linked_list;
 
-import java.util.LinkedList;
+import linked_lists.shared.ListNode;
 
 // Given:
 //      - linked list of integers

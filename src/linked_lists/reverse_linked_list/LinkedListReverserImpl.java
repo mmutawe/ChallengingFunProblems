@@ -1,6 +1,6 @@
 package linked_lists.reverse_linked_list;
 
-import java.util.Objects;
+import linked_lists.shared.ListNode;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;

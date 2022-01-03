@@ -1,6 +1,6 @@
 package testsamples.linked_list;
 
-import linked_lists.reverse_linked_list.ListNode;
+import linked_lists.shared.ListNode;
 
 public class LinkedListTestSampleSML {
 

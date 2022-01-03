@@ -1,5 +1,7 @@
 package linked_lists.reverse_linked_list;
 
+import linked_lists.shared.ListNode;
+
 import static java.util.Objects.nonNull;
 import static testsamples.linked_list.LinkedListTestSampleSML.LINKLIST_TEST_SAMPLE_1;
 import static testsamples.linked_list.LinkedListTestSampleSML.LINKLIST_TEST_SAMPLE_NO_VALUES;

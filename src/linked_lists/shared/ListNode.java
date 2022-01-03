@@ -1,8 +1,8 @@
-package linked_lists.reverse_linked_list;
+package linked_lists.shared;
 
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
     public ListNode() {
     }
