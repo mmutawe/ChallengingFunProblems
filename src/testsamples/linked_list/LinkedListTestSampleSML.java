@@ -16,4 +16,25 @@ public class LinkedListTestSampleSML {
                                     new ListNode(4,
                                             new ListNode(5)))));
 
+    public static final ListNode LINKLIST_TEST_SAMPLE_2 =
+            new ListNode(1,
+                    new ListNode(2,
+                            new ListNode(3,
+                                    new ListNode(4,
+                                            new ListNode(5)))));
+
+    public static final ListNode LINKLIST_TEST_SAMPLE_3 =
+            new ListNode(1,
+                    new ListNode(2,
+                            new ListNode(3,
+                                    new ListNode(4,
+                                            new ListNode(5)))));
+
+    public static final ListNode LINKLIST_TEST_SAMPLE_4 =
+            new ListNode(1,
+                    new ListNode(2,
+                            new ListNode(3,
+                                    new ListNode(4,
+                                            new ListNode(5)))));
+
 }
