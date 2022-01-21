@@ -3,10 +3,10 @@ package linked_lists.singly.reverse_linked_list;
 import linked_lists.shared.ListNode;
 
 import static java.util.Objects.nonNull;
-import static testsamples.linked_list.LinkedListTestSampleSML.LINKLIST_TEST_SAMPLE_1;
-import static testsamples.linked_list.LinkedListTestSampleSML.LINKLIST_TEST_SAMPLE_NO_VALUES;
-import static testsamples.linked_list.LinkedListTestSampleSML.LINKLIST_TEST_SAMPLE_NULL;
-import static testsamples.linked_list.LinkedListTestSampleSML.LINKLIST_TEST_SAMPLE_ONE;
+import static testsamples.linked_list.SinglyLinkedListTestSampleSML.LINKLIST_TEST_SAMPLE_1;
+import static testsamples.linked_list.SinglyLinkedListTestSampleSML.LINKLIST_TEST_SAMPLE_NO_VALUES;
+import static testsamples.linked_list.SinglyLinkedListTestSampleSML.LINKLIST_TEST_SAMPLE_NULL;
+import static testsamples.linked_list.SinglyLinkedListTestSampleSML.LINKLIST_TEST_SAMPLE_ONE;
 
 public class Test {
     public static void main(String[] args) {

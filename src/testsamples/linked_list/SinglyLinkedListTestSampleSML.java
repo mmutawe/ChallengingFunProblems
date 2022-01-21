@@ -2,7 +2,7 @@ package testsamples.linked_list;
 
 import linked_lists.shared.ListNode;
 
-public class LinkedListTestSampleSML {
+public class SinglyLinkedListTestSampleSML {
 
     public static final ListNode LINKLIST_TEST_SAMPLE_NULL = null;
     public static final ListNode LINKLIST_TEST_SAMPLE_NO_VALUES = new ListNode();

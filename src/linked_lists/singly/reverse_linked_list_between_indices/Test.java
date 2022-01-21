@@ -3,7 +3,7 @@ package linked_lists.singly.reverse_linked_list_between_indices;
 import linked_lists.shared.ListNode;
 
 import static java.util.Objects.nonNull;
-import static testsamples.linked_list.LinkedListTestSampleSML.*;
+import static testsamples.linked_list.SinglyLinkedListTestSampleSML.*;
 
 public class Test {
 
