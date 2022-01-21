@@ -1,4 +1,4 @@
-package linked_lists.reverse_linked_list_between_indices;
+package linked_lists.singly.reverse_linked_list_between_indices;
 
 import linked_lists.shared.ListNode;
 

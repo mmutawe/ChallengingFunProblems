@@ -1,4 +1,4 @@
-package linked_lists.reverse_linked_list;
+package linked_lists.singly.reverse_linked_list;
 
 import linked_lists.shared.ListNode;
 
