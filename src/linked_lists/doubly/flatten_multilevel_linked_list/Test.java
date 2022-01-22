@@ -16,21 +16,21 @@ public class Test {
     public static void testComplexLinkFlattener() {
         ComplexLinkListFlattener flattener = new ComplexLinkListFlattenerImpl();
 
-//        System.out.println("LINKLIST_TEST_SAMPLE_NULL");
-//        printAllNodes(flattener.flatten(LINKLIST_TEST_SAMPLE_NULL));
-//        System.out.println();
-//
-//        System.out.println("LINKLIST_TEST_SAMPLE_NO_VALUES");
-//        printAllNodes(flattener.flatten(LINKLIST_TEST_SAMPLE_NO_VALUES));
-//        System.out.println();
-//
-//        System.out.println("LINKLIST_TEST_SAMPLE_NO_CHILDREN");
-//        printAllNodes(flattener.flatten(LINKLIST_TEST_SAMPLE_NO_CHILDREN));
-//        System.out.println();
-//
-//        System.out.println("LINKLIST_TEST_SAMPLE_ALL_CHILDREN");
-//        printAllNodes(flattener.flatten(LINKLIST_TEST_SAMPLE_ALL_CHILDREN));
-//        System.out.println();
+        System.out.println("LINKLIST_TEST_SAMPLE_NULL");
+        printAllNodes(flattener.flatten(LINKLIST_TEST_SAMPLE_NULL));
+        System.out.println();
+
+        System.out.println("LINKLIST_TEST_SAMPLE_NO_VALUES");
+        printAllNodes(flattener.flatten(LINKLIST_TEST_SAMPLE_NO_VALUES));
+        System.out.println();
+
+        System.out.println("LINKLIST_TEST_SAMPLE_NO_CHILDREN");
+        printAllNodes(flattener.flatten(LINKLIST_TEST_SAMPLE_NO_CHILDREN));
+        System.out.println();
+
+        System.out.println("LINKLIST_TEST_SAMPLE_ALL_CHILDREN");
+        printAllNodes(flattener.flatten(LINKLIST_TEST_SAMPLE_ALL_CHILDREN));
+        System.out.println();
 
         System.out.println("LINKLIST_TEST_SAMPLE_1");
         printAllNodes(flattener.flatten(LINKLIST_TEST_SAMPLE_1));

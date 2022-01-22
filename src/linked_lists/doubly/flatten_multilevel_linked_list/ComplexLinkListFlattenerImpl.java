@@ -22,7 +22,6 @@ public class ComplexLinkListFlattenerImpl implements ComplexLinkListFlattener {
 
         while (nonNull(pointer.next) || nonNull(pointer.child) || !parentSubsequents.isEmpty()) {
             if (isNull(pointer.child)) {
-
                 if (isNull(pointer.next) && !parentSubsequents.isEmpty()) {
                     ComplexListNode tmpParentSubsequent = parentSubsequents.pop();
                     pointer.next = tmpParentSubsequent;
