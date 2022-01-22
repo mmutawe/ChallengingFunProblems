@@ -11,5 +11,7 @@ import linked_lists.shared.ListNode;
 //      return the node where the cycle begins. If there is no cycle, return null.
 //      Ex: 1 --> 2 --> 3 --> 2, ans: Node(2)
 public interface LinkedListCycleDetector {
-    ListNode detectCycle(ListNode head);
+    ListNode detectCycleV1(ListNode head);
+
+    ListNode detectCycleV2(ListNode head);
 }
