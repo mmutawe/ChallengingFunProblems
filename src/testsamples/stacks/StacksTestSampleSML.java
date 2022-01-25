@@ -2,7 +2,6 @@ package testsamples.stacks;
 
 public class StacksTestSampleSML {
 
-    public static final String PARENTHESES_TEST_SAMPLE_NULL = null;
     public static final String PARENTHESES_TEST_SAMPLE_EMPTY = "";
     public static final String PARENTHESES_TEST_SAMPLE_ONE_ELEMENT = "(";
 
