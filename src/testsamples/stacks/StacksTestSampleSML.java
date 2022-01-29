@@ -12,4 +12,10 @@ public class StacksTestSampleSML {
     public static final String PARENTHESES_TEST_SAMPLE_5 = "{([]";
     public static final String PARENTHESES_TEST_SAMPLE_6 = "{([)]}";
 
+    public static final String PARENTHESES_TEST_SAMPLE_7 = "a)bc(d)";
+
+    public static final String PARENTHESES_TEST_SAMPLE_8 = "(ab(c)d";
+
+    public static final String PARENTHESES_TEST_SAMPLE_9 = "))((";
+
 }
