@@ -1,8 +1,6 @@
 package arrays.Kth_largest_element;
 
-import java.util.Arrays;
-
-public class KthLargestElementFinderImpl implements KthLargestElementFinder {
+public class KthLargestElementFinderImplV1 implements KthLargestElementFinder {
 
     // Optimal Solution
     // using Quick Sort

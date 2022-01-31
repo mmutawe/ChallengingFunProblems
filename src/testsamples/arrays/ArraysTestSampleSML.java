@@ -14,4 +14,5 @@ public class ArraysTestSampleSML {
     public static final int[] ARR_TEST_SAMPLE_6 = {5, 3, 1, 6, 4, 2};
     public static final int[] ARR_TEST_SAMPLE_7 = {10, 5, 8, 9, 3, 6, 15, 12, 16};
     public static final int[] ARR_TEST_SAMPLE_8 = {3,3,3,3,3,3,3,3,3};
+    public static final int[] ARR_TEST_SAMPLE_9 = {3,2,1,5,6,4};
 }
