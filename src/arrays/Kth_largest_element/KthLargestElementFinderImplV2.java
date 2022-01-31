@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class KthLargestElementFinderImplV2 implements KthLargestElementFinder {
 
     // Optimal Solution
-    // using Nico Lomuto version of Quick Sort
+    // using Nico Lomuto version of Quick Sort within Quick Select
     // Space: O(n), Time: O(n log n)
     @Override
     public int find(int[] nums, int k) {
