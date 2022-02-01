@@ -8,6 +8,7 @@ import static java.util.Objects.nonNull;
 public class BinaryTreeMaxDepthFinderImpl implements BinaryTreeMaxDepthFinder {
 
     // Optimal Solution
+    // DFS - PreOrder
     // Space: O(1), Time: O(n)
     @Override
     public int findMaxDepth(TreeNode root) {
