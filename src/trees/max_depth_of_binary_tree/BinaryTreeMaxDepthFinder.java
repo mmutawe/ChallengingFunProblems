@@ -1,6 +1,8 @@
 package trees.max_depth_of_binary_tree;
 
 
+import trees.shared.TreeNode;
+
 // Given:
 //      A binary tree
 // Constrains:

@@ -1,6 +1,6 @@
 package trees.max_depth_of_binary_tree;
 
-import java.util.Objects;
+import trees.shared.TreeNode;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;

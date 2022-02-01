@@ -1,6 +1,6 @@
 package testsamples.trees;
 
-import trees.max_depth_of_binary_tree.TreeNode;
+import trees.shared.TreeNode;
 
 public class TreesTestSampleSML {
 

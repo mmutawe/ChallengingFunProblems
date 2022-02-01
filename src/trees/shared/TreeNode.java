@@ -1,4 +1,4 @@
-package trees.max_depth_of_binary_tree;
+package trees.shared;
 
 public class TreeNode {
     public int val;
