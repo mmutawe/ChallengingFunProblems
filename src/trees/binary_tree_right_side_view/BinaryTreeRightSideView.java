@@ -6,7 +6,7 @@ import java.util.List;
 // Given:
 //      A binary tree
 // Constrains:
-//      - if null return null
+//      - if no values in tree return null
 //
 // TODO - Required:
 //      Return an array of the values of the nodes you can see from the right side of tree
