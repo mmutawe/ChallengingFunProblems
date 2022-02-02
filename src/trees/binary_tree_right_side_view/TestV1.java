@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 import static testsamples.trees.TreesTestSampleSML.*;
 
-public class Test {
+public class TestV1 {
     public static void main(String[] args) {
         runAllTests();
     }
 
     public static void testBinaryTreeMaxDepthFinderV1() {
-        BinaryTreeRightSideView binaryTreeRightSideView = new BinaryTreeRightSideViewImpl();
+        BinaryTreeRightSideView binaryTreeRightSideView = new BinaryTreeRightSideViewImplV1();
 
         System.out.println("TREE_TEST_SAMPLE_NULL");
         System.out.println(
@@ -54,7 +54,7 @@ public class Test {
     }
 
     public static void testBinaryTreeMaxDepthFinderV2() {
-        BinaryTreeRightSideView binaryTreeRightSideView = new BinaryTreeRightSideViewImpl();
+        BinaryTreeRightSideView binaryTreeRightSideView = new BinaryTreeRightSideViewImplV1();
 
         System.out.println("TREE_TEST_SAMPLE_NULL");
         System.out.println(

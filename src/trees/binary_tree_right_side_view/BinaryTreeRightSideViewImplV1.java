@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class BinaryTreeRightSideViewImpl implements BinaryTreeRightSideView {
+public class BinaryTreeRightSideViewImplV1 implements BinaryTreeRightSideView {
 
     // using BFS (Iterative)
     // Space: O(n), Time: O(n)
