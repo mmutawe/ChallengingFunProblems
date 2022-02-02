@@ -1,7 +1,5 @@
 package trees.binary_tree_right_side_view;
 
-import testsamples.trees.TreesTestSampleSML;
-
 import java.util.Arrays;
 
 import static testsamples.trees.TreesTestSampleSML.*;
@@ -11,13 +9,13 @@ public class Test {
         runAllTests();
     }
 
-    public static void testBinaryTreeMaxDepthFinder() {
+    public static void testBinaryTreeMaxDepthFinderV1() {
         BinaryTreeRightSideView binaryTreeRightSideView = new BinaryTreeRightSideViewImpl();
 
         System.out.println("TREE_TEST_SAMPLE_NULL");
         System.out.println(
                 Arrays.toString(binaryTreeRightSideView
-                        .rightSideView(TREE_TEST_SAMPLE_NULL)
+                        .rightSideViewV1(TREE_TEST_SAMPLE_NULL)
                         .toArray())
         );
         System.out.println("--- --- ---");
@@ -25,7 +23,7 @@ public class Test {
         System.out.println("TREE_TEST_SAMPLE_ONE_ELEMENT");
         System.out.println(
                 Arrays.toString(binaryTreeRightSideView
-                        .rightSideView(TREE_TEST_SAMPLE_ONE_ELEMENT)
+                        .rightSideViewV1(TREE_TEST_SAMPLE_ONE_ELEMENT)
                         .toArray())
         );
         System.out.println("--- --- ---");
@@ -33,7 +31,7 @@ public class Test {
         System.out.println("TREE_TEST_SAMPLE_1");
         System.out.println(
                 Arrays.toString(binaryTreeRightSideView
-                        .rightSideView(TREE_TEST_SAMPLE_1)
+                        .rightSideViewV1(TREE_TEST_SAMPLE_1)
                         .toArray())
         );
         System.out.println("--- --- ---");
@@ -41,7 +39,7 @@ public class Test {
         System.out.println("TREE_TEST_SAMPLE_2");
         System.out.println(
                 Arrays.toString(binaryTreeRightSideView
-                        .rightSideView(TREE_TEST_SAMPLE_2)
+                        .rightSideViewV1(TREE_TEST_SAMPLE_2)
                         .toArray())
         );
         System.out.println("--- --- ---");
@@ -49,14 +47,60 @@ public class Test {
         System.out.println("TREE_TEST_SAMPLE_3");
         System.out.println(
                 Arrays.toString(binaryTreeRightSideView
-                        .rightSideView(TREE_TEST_SAMPLE_3)
+                        .rightSideViewV1(TREE_TEST_SAMPLE_3)
+                        .toArray())
+        );
+        System.out.println("--- --- ---");
+    }
+
+    public static void testBinaryTreeMaxDepthFinderV2() {
+        BinaryTreeRightSideView binaryTreeRightSideView = new BinaryTreeRightSideViewImpl();
+
+        System.out.println("TREE_TEST_SAMPLE_NULL");
+        System.out.println(
+                Arrays.toString(binaryTreeRightSideView
+                        .rightSideViewV2(TREE_TEST_SAMPLE_NULL)
+                        .toArray())
+        );
+        System.out.println("--- --- ---");
+
+        System.out.println("TREE_TEST_SAMPLE_ONE_ELEMENT");
+        System.out.println(
+                Arrays.toString(binaryTreeRightSideView
+                        .rightSideViewV2(TREE_TEST_SAMPLE_ONE_ELEMENT)
+                        .toArray())
+        );
+        System.out.println("--- --- ---");
+
+        System.out.println("TREE_TEST_SAMPLE_1");
+        System.out.println(
+                Arrays.toString(binaryTreeRightSideView
+                        .rightSideViewV2(TREE_TEST_SAMPLE_1)
+                        .toArray())
+        );
+        System.out.println("--- --- ---");
+
+        System.out.println("TREE_TEST_SAMPLE_2");
+        System.out.println(
+                Arrays.toString(binaryTreeRightSideView
+                        .rightSideViewV2(TREE_TEST_SAMPLE_2)
+                        .toArray())
+        );
+        System.out.println("--- --- ---");
+
+        System.out.println("TREE_TEST_SAMPLE_3");
+        System.out.println(
+                Arrays.toString(binaryTreeRightSideView
+                        .rightSideViewV2(TREE_TEST_SAMPLE_3)
                         .toArray())
         );
         System.out.println("--- --- ---");
     }
 
     private static void runAllTests() {
-        testBinaryTreeMaxDepthFinder();
+//        testBinaryTreeMaxDepthFinderV1();
+//        System.out.println("-------------------------------");
+        testBinaryTreeMaxDepthFinderV2();
         System.out.println("-------------------------------");
 
     }

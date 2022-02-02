@@ -12,7 +12,7 @@ public class BinaryTreeRightSideViewImpl implements BinaryTreeRightSideView {
     // using BFS (Iterative)
     // Space: O(n), Time: O(n)
     @Override
-    public List<Integer> rightSideView(TreeNode root) {
+    public List<Integer> rightSideViewV1(TreeNode root) {
 
         List<Integer> sideViewNodesValues = new ArrayList<>();
         if (root == null) {
@@ -34,6 +34,44 @@ public class BinaryTreeRightSideViewImpl implements BinaryTreeRightSideView {
             }
             if (nodeWithLevel.node.left != null) {
                 queue.add(new NodeWithLevel(nodeWithLevel.level + 1, nodeWithLevel.node.left));
+            }
+        }
+        return sideViewNodesValues;
+    }
+
+    // optimal solution
+    // using BFS (Iterative)
+    // Space: O(n), Time: O(n)
+    @Override
+    public List<Integer> rightSideViewV2(TreeNode root) {
+        List<Integer> sideViewNodesValues = new ArrayList<>();
+        if (root == null) {
+            return sideViewNodesValues;
+        }
+
+        int nodesPerLevelCounter=1;
+        int maxDepth = 0;
+        int depth = 1;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode currNode = queue.poll();
+            if (depth > maxDepth) {
+                maxDepth = depth;
+                sideViewNodesValues.add(currNode.val);
+            }
+
+            if (currNode.right != null) {
+                queue.add(currNode.right);
+            }
+            if (currNode.left != null) {
+                queue.add(currNode.left);
+            }
+
+            nodesPerLevelCounter--;
+            if (nodesPerLevelCounter==0){
+                nodesPerLevelCounter = queue.size();
+                depth++;
             }
         }
         return sideViewNodesValues;

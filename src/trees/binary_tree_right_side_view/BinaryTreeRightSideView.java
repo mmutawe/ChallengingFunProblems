@@ -18,5 +18,6 @@ import java.util.List;
 //       (6)_
 //          (7)
 public interface BinaryTreeRightSideView {
-    List<Integer> rightSideView(TreeNode root);
+    List<Integer> rightSideViewV1(TreeNode root);
+    List<Integer> rightSideViewV2(TreeNode root);
 }
