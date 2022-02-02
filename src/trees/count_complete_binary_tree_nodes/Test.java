@@ -1,2 +1,7 @@
-package trees.count_complete_binary_tree_nodes;public class Test {
+package trees.count_complete_binary_tree_nodes;
+
+public class Test {
+    public static void main(String[] args) {
+
+    }
 }
