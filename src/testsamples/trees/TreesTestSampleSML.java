@@ -17,6 +17,11 @@ public class TreesTestSampleSML {
     public static final TreeNode TREE_TEST_SAMPLE_6;
     public static final TreeNode TREE_TEST_SAMPLE_7;
 
+    public static final TreeNode TREE_TEST_SAMPLE_8;
+    public static final TreeNode TREE_TEST_SAMPLE_9;
+    public static final TreeNode TREE_TEST_SAMPLE_10;
+    public static final TreeNode TREE_TEST_SAMPLE_11;
+
     static {
         TREE_TEST_SAMPLE_NULL = null;
         TREE_TEST_SAMPLE_ONE_ELEMENT = new TreeNode(1);
@@ -93,5 +98,39 @@ public class TreesTestSampleSML {
         //       2
         TREE_TEST_SAMPLE_7 = new TreeNode(1);
         TREE_TEST_SAMPLE_7.left = new TreeNode(2);
+
+        //        _____1_____
+        //       2           3
+        TREE_TEST_SAMPLE_8 = new TreeNode(1);
+        TREE_TEST_SAMPLE_8.left = new TreeNode(2);
+        TREE_TEST_SAMPLE_8.right = new TreeNode(3);
+
+        //        _____5_____
+        //       1        ___4___
+        //                3     6
+        TREE_TEST_SAMPLE_9 = new TreeNode(5);
+        TREE_TEST_SAMPLE_9.left = new TreeNode(1);
+        TREE_TEST_SAMPLE_9.right = new TreeNode(4);
+        TREE_TEST_SAMPLE_9.right.left = new TreeNode(3);
+        TREE_TEST_SAMPLE_9.right.right = new TreeNode(6);
+
+        //        _____5_____
+        //       4        ___6___
+        //                3     7
+        TREE_TEST_SAMPLE_10 = new TreeNode(5);
+        TREE_TEST_SAMPLE_10.left = new TreeNode(4);
+        TREE_TEST_SAMPLE_10.right = new TreeNode(6);
+        TREE_TEST_SAMPLE_10.right.left = new TreeNode(3);
+        TREE_TEST_SAMPLE_10.right.right = new TreeNode(7);
+
+        //        _____4_____
+        //       4        ___4___
+        //                4     4
+        TREE_TEST_SAMPLE_11 = new TreeNode(4);
+        TREE_TEST_SAMPLE_11.left = new TreeNode(4);
+        TREE_TEST_SAMPLE_11.right = new TreeNode(4);
+        TREE_TEST_SAMPLE_11.right.left = new TreeNode(4);
+        TREE_TEST_SAMPLE_11.right.right = new TreeNode(4);
+
     }
 }
