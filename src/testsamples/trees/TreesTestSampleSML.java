@@ -12,6 +12,11 @@ public class TreesTestSampleSML {
     public static final TreeNode TREE_TEST_SAMPLE_2;
     public static final TreeNode TREE_TEST_SAMPLE_3;
 
+    public static final TreeNode TREE_TEST_SAMPLE_4;
+    public static final TreeNode TREE_TEST_SAMPLE_5;
+    public static final TreeNode TREE_TEST_SAMPLE_6;
+    public static final TreeNode TREE_TEST_SAMPLE_7;
+
     static {
         TREE_TEST_SAMPLE_NULL = null;
         TREE_TEST_SAMPLE_ONE_ELEMENT = new TreeNode(1);
@@ -49,5 +54,44 @@ public class TreesTestSampleSML {
         TREE_TEST_SAMPLE_3.right = new TreeNode(3);
         TREE_TEST_SAMPLE_3.left.left = new TreeNode(4);
         TREE_TEST_SAMPLE_3.right.right = new TreeNode(5);
+
+        //        _____1_____
+        //    ___2___        3
+        //   4       5
+        TREE_TEST_SAMPLE_4 = new TreeNode(1);
+        TREE_TEST_SAMPLE_4.left = new TreeNode(2);
+        TREE_TEST_SAMPLE_4.right = new TreeNode(3);
+        TREE_TEST_SAMPLE_4.left.left = new TreeNode(4);
+        TREE_TEST_SAMPLE_4.left.right = new TreeNode(5);
+
+        //        _____1_____
+        //    ___2___     ___3
+        //   4       5    6
+        TREE_TEST_SAMPLE_5 = new TreeNode(1);
+        TREE_TEST_SAMPLE_5.left = new TreeNode(2);
+        TREE_TEST_SAMPLE_5.right = new TreeNode(3);
+        TREE_TEST_SAMPLE_5.left.left = new TreeNode(4);
+        TREE_TEST_SAMPLE_5.left.right = new TreeNode(5);
+        TREE_TEST_SAMPLE_5.right.left = new TreeNode(6);
+
+        //        _____1_____
+        //    __2__        __3__
+        //  _4_    5      6     7
+        // 8  9
+        //
+        TREE_TEST_SAMPLE_6 = new TreeNode(1);
+        TREE_TEST_SAMPLE_6.left = new TreeNode(2);
+        TREE_TEST_SAMPLE_6.right = new TreeNode(3);
+        TREE_TEST_SAMPLE_6.left.left = new TreeNode(4);
+        TREE_TEST_SAMPLE_6.left.right = new TreeNode(5);
+        TREE_TEST_SAMPLE_6.right.left = new TreeNode(6);
+        TREE_TEST_SAMPLE_6.right.right = new TreeNode(7);
+        TREE_TEST_SAMPLE_6.left.left.left = new TreeNode(8);
+        TREE_TEST_SAMPLE_6.left.left.right = new TreeNode(9);
+
+        //        _____1
+        //       2
+        TREE_TEST_SAMPLE_7 = new TreeNode(1);
+        TREE_TEST_SAMPLE_7.left = new TreeNode(2);
     }
 }
