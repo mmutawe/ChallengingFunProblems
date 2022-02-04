@@ -106,13 +106,13 @@ public class TreesTestSampleSML {
         TREE_TEST_SAMPLE_8.right = new TreeNode(3);
 
         //        _____5_____
-        //       1        ___4___
-        //                3     6
+        //       1        ___10___
+        //                6     12
         TREE_TEST_SAMPLE_9 = new TreeNode(5);
         TREE_TEST_SAMPLE_9.left = new TreeNode(1);
-        TREE_TEST_SAMPLE_9.right = new TreeNode(4);
-        TREE_TEST_SAMPLE_9.right.left = new TreeNode(3);
-        TREE_TEST_SAMPLE_9.right.right = new TreeNode(6);
+        TREE_TEST_SAMPLE_9.right = new TreeNode(10);
+        TREE_TEST_SAMPLE_9.right.left = new TreeNode(6);
+        TREE_TEST_SAMPLE_9.right.right = new TreeNode(12);
 
         //        _____5_____
         //       4        ___6___
