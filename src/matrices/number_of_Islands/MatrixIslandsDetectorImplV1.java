@@ -2,8 +2,9 @@ package matrices.number_of_Islands;
 
 import java.util.Arrays;
 
-public class MatrixIslandsDetectorImpl implements MatrixIslandsDetector {
+public class MatrixIslandsDetectorImplV1 implements MatrixIslandsDetector {
 
+    // Brute force solution
     // Time: O(n), Space: O(n) --> n = all nodes (x * y)
     @Override
     public int getNumOfIslands(char[][] grid) {
