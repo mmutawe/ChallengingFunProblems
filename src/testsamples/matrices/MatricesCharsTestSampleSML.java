@@ -1,6 +1,6 @@
 package testsamples.matrices;
 
-public class MatricesTestSampleSML {
+public class MatricesCharsTestSampleSML {
 
     public static final char[][] MATRIX_TEST_SAMPLE_ONE_ELEMENT_0 = {{'0'}};
     public static final char[][] MATRIX_TEST_SAMPLE_ONE_ELEMENT_1 = {{'1'}};

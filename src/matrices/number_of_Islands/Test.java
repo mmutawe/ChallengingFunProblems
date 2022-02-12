@@ -1,6 +1,6 @@
 package matrices.number_of_Islands;
 
-import static testsamples.matrices.MatricesTestSampleSML.*;
+import static testsamples.matrices.MatricesCharsTestSampleSML.*;
 
 public class Test {
     public static void main(String[] args) {
