@@ -6,6 +6,7 @@ import java.util.List;
 
 public class EmptyNodesToGateDistanceCalculatorImpl implements EmptyNodesToGateDistanceCalculator {
 
+    // Time: O(n), Space: O(n) --> n = all nodes (x * y)
     @Override
     public int[][] getMatrixDistanceToGates(int[][] grid) {
 
