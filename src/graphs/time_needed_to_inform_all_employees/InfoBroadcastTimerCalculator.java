@@ -20,5 +20,5 @@ package graphs.time_needed_to_inform_all_employees;
 //      - 0 <= headID < n
 //      - 0 <= informTime[i] (informTime[i] == 0 if employee i has no subordinates)
 public interface InfoBroadcastTimerCalculator {
-    int numOfMinutes(int n, int headID, int[] manager, int[] informTime);
+    int numOfMinutes(int n, int headID, int[] managers, int[] informTime);
 }
